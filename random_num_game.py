@@ -6,12 +6,16 @@ def get_guess(low, high, current_attempt_num):
         try:
             user_guess = int(input(f"try {current_attempt_num} - Your guess: "))
         except ValueError:
-            print("Enter a number")
+            print(
+                f"You entered a string please enter a whole number between {low} and {high}, (this try did not count)"
+            )
             continue
 
         if user_guess >= low and user_guess <= high:
             return user_guess
-        print(f"Enter a number between {low} and {high}")
+        print(
+            f"Number out of range pleas enter a number between {low} and {high} (this try did not count)"
+        )
 
 
 def play_game(low, high, current_attempt, secret):
@@ -78,6 +82,8 @@ secret = random.randint(minimum_number, maximum_number)
 
 game_start_message()
 
+hint_round = 3
+
 while attempts_so_far <= max_attempts:
     won_flag = show_result(
         play_game(minimum_number, maximum_number, attempts_so_far, secret),
@@ -86,7 +92,7 @@ while attempts_so_far <= max_attempts:
     )
     attempts_so_far += 1
 
-    if attempts_so_far == 4:
+    if attempts_so_far == hint_round + 1 and not won_flag:
         give_hint(secret)
 
     if attempts_so_far == max_attempts + 1 and not won_flag:

@@ -4,13 +4,13 @@ this will open the terminal and start the game.
 simply fill up all the input commands that appear and enjoy!
 
 --- Menu options ---
-the main options available is the difficulty, simply choose
+the main options available are the difficulty, simply choose
 whether you want to play easy, normal or hard difficulty and enjoy!
 
---- important notices ---
-added 2 extenstions:
-added  difficulty options
-added a hint after 3 guesses have been concluded
+--- Extra Features ---
+added 2 extensions:
+added difficulty options (easy, normal, hard)
+added a hint (even or odd) after three wrong guesses
 
 --- Sample Run ---
 
