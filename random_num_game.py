@@ -62,6 +62,13 @@ def set_difficulty():
         return 1, 1000, 10
 
 
+def give_hint(secret):
+    if secret % 2 == 0:
+        print("Here is a hint, the number is even.")
+    else:
+        print("Here is a hint, the number is odd.")
+
+
 # main
 
 minimum_number, maximum_number, max_attempts = set_difficulty()
@@ -78,6 +85,9 @@ while attempts_so_far <= max_attempts:
         attempts_so_far,
     )
     attempts_so_far += 1
+
+    if attempts_so_far == 4:
+        give_hint(secret)
 
     if attempts_so_far == max_attempts + 1 and not won_flag:
         print("You Lost!")
