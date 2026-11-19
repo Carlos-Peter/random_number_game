@@ -4,7 +4,7 @@ import random
 def get_guess(low, high, current_attempt_num):
     while True:
         try:
-            user_guess = int(input(f"try  {current_attempt_num} - Your guess: "))
+            user_guess = int(input(f"try {current_attempt_num} - Your guess: "))
         except ValueError:
             print("Enter a number")
             continue
