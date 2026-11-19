@@ -5,7 +5,7 @@ simply fill up all the input commands that appear and enjoy!
 
 --- Menu options ---
 the main options available is the difficulty, simply choose
-wheather you want to play easy, normal or hard difficulty and enjoy!
+whether you want to play easy, normal or hard difficulty and enjoy!
 
 --- Sample Run ---
 
