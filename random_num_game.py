@@ -1,5 +1,4 @@
 import random
-from ast import MatchValue
 
 
 def get_guess(low, high, current_attempt_num):
